@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "build" : "parcel build public/index.html --no-minify"
   },
   "keywords": [],
   "author": "",
