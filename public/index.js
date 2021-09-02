@@ -13,6 +13,7 @@ btn.addEventListener("click", async (e) => {
 
   if (artistVal === "" || songVal === "") return;
 
+  main.innerText = "Loading...";
   const data = await fetch(`${url}/${artistVal}/${songVal}`)
     .then((res) => res.json())
     .then((obj) => obj.data);
